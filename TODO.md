@@ -1,0 +1,1 @@
+# TODO List for Footer Update Task\n\n## Plan Breakdown:\n1. ✅ Create TODO.md\n2. ✅ Update index.html footer:\n   - Change copyright year to ٢٠٢٦\n   - Change designer name to "mohammed j"\n3. ✅ Verify changes by opening index.html\n4. ✅ Mark task complete
