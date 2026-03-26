@@ -8,12 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCartCount();
     }
 
-    // Bind Add to Cart buttons
-    const addBtns = document.querySelectorAll('.product-card .btn-primary');
+    // Bind Add to Cart buttons (supports both product-card and slider-card)
+    const addBtns = document.querySelectorAll('.product-card .btn-primary, .slider-card .btn-primary');
     addBtns.forEach(btn => {
         btn.addEventListener('click', function(e) {
             e.preventDefault();
-            const card = this.closest('.product-card');
+            const card = this.closest('.product-card, .slider-card');
+
             
             // Get product details
             let title = '';
@@ -99,7 +100,8 @@ function renderCartItems() {
                 <div class="cart-item">
                     <img src="${item.imgSrc}" alt="${item.title}">
                     <div class="cart-item-details">
-                        <div class="cart-item-title" dir="ltr" style="text-align: right;">${item.title}</div>
+            <div class="cart-item-title" dir="auto" style="text-align: right;">${item.title}</div>
+
                         <div style="color: var(--primary-dark); font-weight: 700;">${item.price.toLocaleString()} د.ع</div>
                     </div>
                     <div class="qty-controls" dir="ltr">

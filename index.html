@@ -38,8 +38,9 @@
 </div>
     <nav class="nav-links">
                 <a href="#home" class="active">الرئيسية</a>
-                <a href="#shop">منتجاتنا</a>
-                <a href="#products">باقاتنا</a>
+                <a href="#shop">عسل المانوكا</a>
+                <a href="#products">باقات وعروض</a>
+
                 <a href="#premium">تجربة الباش</a>
                 <a href="#contact">تواصل معنا</a>
             </nav>
@@ -136,7 +137,8 @@
                 </div>
 
                 <div class="premium-cta-group">
-                <button class="btn btn-primary btn-large cta-shadow" onclick="document.getElementById('shop').scrollIntoView({behavior: 'smooth', block: 'start'})">اطلب باقتك الفاخرة الآن</button>
+                <button class="btn btn-primary btn-large cta-shadow" onclick="document.getElementById('shop').scrollIntoView({behavior: 'smooth', block: 'start'})">استكشف المانوكا <i class="fas fa-arrow-left"></i></button>
+
                     <p class="trust-text"><i class="fas fa-shield-alt"></i> يثق بنا مئات العملاء الباحثين عن الجودة الأصيلة.</p>
                 </div>
             </div>
@@ -153,19 +155,18 @@
 
 
 
-    <!-- PRODUCTS SECTION -->
-    <section id="products" class="section products-section">
+    <!-- MANUKA SLIDER SECTION -->
+    <section id="shop" class="section products-section">
         <div class="container">
             <div class="section-title text-center">
-                <span class="premium-badge">أقوى العروض</span>
-                <h2>منتجاتنا المميزة</h2>
-                <p class="section-subtitle">اختر باقة العسل التي تناسبك واستمتع بأفضل الأسعار</p>
+                <span class="premium-badge">عسل المانوكا الفاخر</span>
+                <h2>تراكيز المانوكا المتدرجة</h2>
+                <p class="section-subtitle">اسحب لليمين ← لاستكشاف كل التراكيز المتاحة</p>
             </div>
 
-            <div class="products-grid">
-                <!-- Slider Products Integrated -->
+            <div class="products-slider">
                 <!-- Product 1: Manuka 1620 MGO+ -->
-                <div class="product-card">
+                <div class="slider-card">
                     <div class="product-img">
                         <img src="images/photo_5332337314467878540_y.jpg" alt="Manuka 1620 MGO+" loading="lazy" width="300" height="220">
                         <div class="offer-tag premium-tag">نادر جداً</div>
@@ -182,7 +183,7 @@
                 </div>
 
                 <!-- Product 2: Manuka 1197 MGO+ -->
-                <div class="product-card">
+                <div class="slider-card">
                     <div class="product-img">
                         <img src="images/photo_5332337314467878464_w.jpg" alt="Manuka 1197 MGO+" loading="lazy" width="300" height="220">
                         <div class="offer-tag premium-tag">نخبة المانوكا</div>
@@ -199,7 +200,7 @@
                 </div>
 
                 <!-- Product 3: Manuka 829 MGO+ -->
-                <div class="product-card">
+                <div class="slider-card">
                     <div class="product-img">
                         <img src="images/photo_5332337314467878465_w.jpg" alt="Manuka 829 MGO+" loading="lazy" width="300" height="220">
                     </div>
@@ -215,7 +216,7 @@
                 </div>
 
                 <!-- Product 4: Manuka 514 MGO+ -->
-                <div class="product-card">
+                <div class="slider-card">
                     <div class="product-img">
                         <img src="images/photo_5332337314467878541_y.jpg" alt="Manuka 514 MGO+" loading="lazy" width="300" height="220">
                     </div>
@@ -231,7 +232,7 @@
                 </div>
 
                 <!-- Product 5: Manuka 263 MGO+ -->
-                <div class="product-card">
+                <div class="slider-card">
                     <div class="product-img">
                         <img src="images/photo_5332337314467878542_y.jpg" alt="Manuka 263 MGO+" loading="lazy" width="300" height="220">
                     </div>
@@ -245,9 +246,28 @@
                         <button class="btn btn-primary w-100">إضافة للسلة <i class="fas fa-cart-plus"></i></button>
                     </div>
                 </div>
+            </div>
 
+            <div class="slider-controls">
+                <button class="slider-btn" onclick="scrollSlider(-1)"><i class="fas fa-chevron-right"></i></button>
+                <button class="slider-btn" onclick="scrollSlider(1)"><i class="fas fa-chevron-left"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS GRID SECTION -->
+    <section id="products" class="section products-section">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="premium-badge">أقوى العروض</span>
+                <h2>باقاتنا وعروضنا</h2>
+                <p class="section-subtitle">اختر باقة العسل التي تناسبك واستمتع بأفضل الأسعار</p>
+            </div>
+
+            <div class="products-grid">
                 <!-- Original Grid Products -->
                 <!-- Product 6: Manuka 1197 Pack -->
+
                 <div class="product-card">
                     <div class="product-img">
                         <img src="images/product_p1_manuka_1197.png" alt="عسل مانوكا تركيز 1197" loading="lazy" width="400" height="250">
